@@ -1,3 +1,0 @@
-This module enables to set different price view settings for a specific customer tax class.
-This is for example used to show prices including tax to all customers, BUT to show only prices without tax to certain customer groups which have a special customer tax class.
-For example this is very useful for B2B shops.
