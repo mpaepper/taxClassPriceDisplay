@@ -15,6 +15,16 @@
                     <data>Lemundo_TaxClassPriceDisplay_Helper_Tax_Data</data>
                 </rewrite>
             </tax>
+            <phoenix_cashondelivery>
+                <rewrite>
+                    <data>Lemundo_TaxClassPriceDisplay_Helper_Tax_CashOnDelivery</data>
+                </rewrite>
+            </phoenix_cashondelivery>
         </helpers>
+        <models>
+            <lemundo_taxclasspricedisplay>
+                <class>Lemundo_TaxClassPriceDisplay_Model</class>
+            </lemundo_taxclasspricedisplay>
+        </models>
     </global>
 </config> 
