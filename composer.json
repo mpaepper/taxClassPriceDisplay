@@ -1,0 +1,15 @@
+{
+    "name": "lemundo/taxClassPriceDisplay",
+    "type": "magento-module",
+    "license":"OSL-3.0",
+    "description":"Enable price view settings (with / without tax etc) to be different for a certain customer tax class",
+    "authors":[
+        {
+            "name":"Marc Päpper",
+            "email":"m.paepper@lemundo.de"
+        }
+    ],
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
