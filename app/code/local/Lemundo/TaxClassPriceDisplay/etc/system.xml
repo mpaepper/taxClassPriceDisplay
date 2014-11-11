@@ -16,6 +16,64 @@
             <show_in_website>1</show_in_website>
             <show_in_store>1</show_in_store>            
             <groups>
+                <config translate="label"> 
+                    <label>Configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <special_customer_tax_class_id translate="label">
+                            <label>Special Customer Tax Class</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>tax/class_source_customer</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Select customer tax class</comment>
+                        </special_customer_tax_class_id>
+                    </fields>
+                </config>
+                <price_display translate="label"> 
+                    <label>Price Display</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <tax_display_type translate="label">
+                            <label>Setting for catalog prices</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>tax/system_config_source_tax_display_type</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </tax_display_type>
+                        <tax_display_shipping translate="label">
+                            <label>Setting for shipping prices</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>tax/system_config_source_tax_display_type</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </tax_display_shipping>
+                        <tax_display_phoenix_cashondelivery_fee translate="label">
+                            <label>Setting for Phoenix Cash on Delivery module</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>tax/system_config_source_tax_display_type</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>You can ignore this, if you do not use the module Phoenix_CashOnDelivery</comment>
+                        </tax_display_phoenix_cashondelivery_fee>
+                    </fields>
+                </price_display>
                 <cart_display translate="label"> 
                     <label>Cart Display</label>
                     <frontend_type>text</frontend_type>
@@ -80,64 +138,6 @@
                         </tax_cart_display_zero_tax>
                     </fields>
                 </cart_display>
-                <config translate="label"> 
-                    <label>Configuration</label>
-                    <frontend_type>text</frontend_type>
-                    <sort_order>0</sort_order>
-                    <show_in_default>1</show_in_default>
-                    <show_in_website>1</show_in_website>
-                    <show_in_store>1</show_in_store>
-                    <fields>
-                        <special_customer_tax_class_id translate="label">
-                            <label>Special Customer Tax Class</label>
-                            <frontend_type>select</frontend_type>
-                            <source_model>tax/class_source_customer</source_model>
-                            <sort_order>0</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                            <comment>Select customer tax class</comment>
-                        </special_customer_tax_class_id>
-                    </fields>
-                </config>
-                <price_display translate="label"> 
-                    <label>Price Display</label>
-                    <frontend_type>text</frontend_type>
-                    <sort_order>10</sort_order>
-                    <show_in_default>1</show_in_default>
-                    <show_in_website>1</show_in_website>
-                    <show_in_store>1</show_in_store>
-                    <fields>
-                        <tax_display_type translate="label">
-                            <label>Setting for catalog prices</label>
-                            <frontend_type>select</frontend_type>
-                            <source_model>tax/system_config_source_tax_display_type</source_model>
-                            <sort_order>10</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                        </tax_display_type>
-                        <tax_display_shipping translate="label">
-                            <label>Setting for shipping prices</label>
-                            <frontend_type>select</frontend_type>
-                            <source_model>tax/system_config_source_tax_display_type</source_model>
-                            <sort_order>20</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                        </tax_display_shipping>
-                        <tax_display_phoenix_cashondelivery_fee translate="label">
-                            <label>Setting for Phoenix Cash on Delivery module</label>
-                            <frontend_type>select</frontend_type>
-                            <source_model>tax/system_config_source_tax_display_type</source_model>
-                            <sort_order>30</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                            <comment>You can ignore this, if you do not use the module Phoenix_CashOnDelivery</comment>
-                        </tax_display_phoenix_cashondelivery_fee>
-                    </fields>
-                </price_display>
                 <sales_display translate="label"> 
                     <label>Sales Display (orders, invoices, creditmemos)</label>
                     <frontend_type>text</frontend_type>
