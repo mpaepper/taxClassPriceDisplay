@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<config>
+	  <tabs>
+		  <lemundo translate="label" module="lemundo_taxclasspricedisplay">
+        <label>Lemundo</label>
+        <sort_order>0</sort_order>
+      </lemundo>
+	  </tabs>
+	  <sections>
+		<lemundo_b2bprices  translate="label" module="lemundo_taxclasspricedisplay">                    
+		<label>B2B Price Settings</label>
+		<tab>lemundo</tab>
+		<frontend_type>text</frontend_type>
+		<sort_order>0</sort_order>
+		<show_in_default>1</show_in_default>
+		<show_in_website>1</show_in_website>
+		<show_in_store>1</show_in_store>            
+					<groups>
+				      <cart_display translate="label"> 
+					  <label>Cart Display</label>
+					  <frontend_type>text</frontend_type>
+					  <sort_order>20</sort_order>
+					  <show_in_default>1</show_in_default>
+					  <show_in_website>1</show_in_website>
+					  <show_in_store>1</show_in_store>
+				       <fields>
+                          <tax_cart_display_price translate="label">
+                            <label>Setting for cart prices</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>tax/system_config_source_tax_display_type</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </tax_cart_display_price>
+                          <tax_cart_display_subtotal translate="label">
+                            <label>Setting for cart subtotal</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>tax/system_config_source_tax_display_type</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </tax_cart_display_subtotal>
+                          <tax_cart_display_shipping translate="label">
+                            <label>Setting for cart shipping</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>tax/system_config_source_tax_display_type</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </tax_cart_display_shipping>
+                          <tax_cart_display_grandtotal translate="label">
+                            <label>Grand total including tax?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </tax_cart_display_grandtotal>
+                          <tax_cart_display_full_summary translate="label">
+                            <label>Should use full tax summary?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </tax_cart_display_full_summary>
+                          <tax_cart_display_zero_tax translate="label">
+                            <label>Show zero tax?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </tax_cart_display_zero_tax>
+					   </fields>
+					   </cart_display>
+				      <config translate="label"> 
+					  <label>Configuration</label>
+					  <frontend_type>text</frontend_type>
+					  <sort_order>0</sort_order>
+					  <show_in_default>1</show_in_default>
+					  <show_in_website>1</show_in_website>
+					  <show_in_store>1</show_in_store>
+				       <fields>
+                          <special_customer_tax_class_id translate="label">
+                            <label>Special Customer Tax Class</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>tax/system_config_source_tax_display_type</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>Select customer tax class</comment>
+                          </special_customer_tax_class_id>
+					   </fields>
+					   </config>
+				      <price_display translate="label"> 
+					  <label>Price Display</label>
+					  <frontend_type>text</frontend_type>
+					  <sort_order>10</sort_order>
+					  <show_in_default>1</show_in_default>
+					  <show_in_website>1</show_in_website>
+					  <show_in_store>1</show_in_store>
+				       <fields>
+                          <tax_display_type translate="label">
+                            <label>Setting for catalog prices</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>tax/system_config_source_tax_display_type</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </tax_display_type>
+                          <tax_display_shipping translate="label">
+                            <label>Setting for shipping prices</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>tax/system_config_source_tax_display_type</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </tax_display_shipping>
+                          <tax_display_phoenix_cashondelivery_fee translate="label">
+                            <label>Setting for Phoenix Cash on Delivery module</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>tax/system_config_source_tax_display_type</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>You can ignore this, if you do not use the module Phoenix_CashOnDelivery</comment>
+                          </tax_display_phoenix_cashondelivery_fee>
+					   </fields>
+					   </price_display>
+				      <sales_display translate="label"> 
+					  <label>Sales Display (orders, invoices, creditmemos)</label>
+					  <frontend_type>text</frontend_type>
+					  <sort_order>30</sort_order>
+					  <show_in_default>1</show_in_default>
+					  <show_in_website>1</show_in_website>
+					  <show_in_store>1</show_in_store>
+				       <fields>
+                          <tax_sales_display_price translate="label">
+                            <label>Prices</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>tax/system_config_source_tax_display_type</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </tax_sales_display_price>
+                          <tax_sales_display_subtotal translate="label">
+                            <label>Subtotal prices</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>tax/system_config_source_tax_display_type</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </tax_sales_display_subtotal>
+                          <tax_sales_display_shipping translate="label">
+                            <label>Shipping prices</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>tax/system_config_source_tax_display_type</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </tax_sales_display_shipping>
+                          <tax_sales_display_grandtotal translate="label">
+                            <label>Grand total including tax?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </tax_sales_display_grandtotal>
+                          <tax_sales_display_full_summary translate="label">
+                            <label>Show full tax summary?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </tax_sales_display_full_summary>
+                          <tax_sales_display_zero_tax translate="label">
+                            <label>Show zero tax?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </tax_sales_display_zero_tax>
+					   </fields>
+					   </sales_display>
+					</groups>
+		</lemundo_b2bprices>
+	  </sections>
+</config>
